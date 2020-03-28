@@ -1,22 +1,9 @@
 {% extends 'layout.html' %}
 
-import numpy as np
-from skimage import data
-import matplotlib.pyplot as plt 
-%matplotlib inline
-image = data.camera()
-type(img5.jpg)
-
-mask = img5.jpg
-image[mask]=255
-plt.imshow(img5.jpg, cmap='original')
-
-
-
 {% block css %}
 <style>
     body{
-      background-image: url('/static/image/img5.jpg');
+      background-image: url('/static/image/w.jpg');
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -33,27 +20,21 @@ plt.imshow(img5.jpg, cmap='original')
                 <h3 class="card-title">Search By Category</h3>
                 <form method="post">
                         <div class="form-group">
-                          <input type="blank_bar" class="form-control" name="blank_bar" id="blank_bar" aria-describedby="i class="far fa-search-location placeholder="          "></i>
-                          <button class="btn Search" btn-lg btn-block>Search</button>
-                        </div> 
-                              
-                        div import numpy as np
-                        from skimage import data
-                        import matplotlib.pyplot as plt 
-                        %matplotlib inline
-                        image = data.camera()
-                        type(img5.jpg)
-                        
-                        mask = img5.jpg
-                        image[mask]=255
-                        plt.imshow(img5.jpg, cmap='original')
-                      </div>
-                                    
-                    
-                    
-                    
-                    
-                    
+                          <input type="search" class="form-control" name="search" id="Search"aria-describedy="emailHelpId" placeholder="           ">
+                        </div>
+                        <div class="form-group">
+                          <input type="checkbox" id="Amazon">
+                          <label for="Amazon">Amazon</label>
+                        </div>
+                        <div class="form-group">
+                          <input type="checkbox" id="Flipkart">
+                          <label for="Flipkart">Flipkart</label>
+                        </div>
+                        <div class="form-group">
+                          <input type="checkbox" id="Snapdeal">
+                          <label for="Snapdeal">Snapdeal</label>
+                        </div>
+          
                     <button class="btn btn-primary" btn-lg btn-block">Submit</button>
                           
                       </form>
